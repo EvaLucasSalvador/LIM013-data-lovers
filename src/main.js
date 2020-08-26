@@ -19,6 +19,7 @@ const dataCards = (dataPokemon) => {
           <p class="number" id="number">${element.num}</p>
           <p class="imgPoke" id="imgPoke"><img src=${element.img} alt="" class="imgPkm"></p>
           <p class="namePoke" id="namePoke">${element.name.toUpperCase()}</p>
+          
         </section>
         `;
     pokedex.appendChild(sectionElement);
