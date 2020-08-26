@@ -15,7 +15,7 @@ const dataCards = (dataPokemon) => {
     const sectionElement = document.createElement('section');
     sectionElement.setAttribute('class', 'data1');
     sectionElement.innerHTML = `
-       <section id="pokeCard" class="pokeCard">
+      <section id="pokeCard" class="pokeCard">
           <p class="number" id="number">${element.num}</p>
           <p class="imgPoke" id="imgPoke"><img src=${element.img} alt="" class="imgPkm"></p>
           <p class="namePoke" id="namePoke">${element.name.toUpperCase()}</p>
