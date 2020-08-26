@@ -6,7 +6,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+  <main class="mainStyle">
+
+    <!-- BOTON DE ORDENAR A-Z -->
+    <section class="options">
+      <select id="order" class="selectStyle">
+        <option value="" selected disabled>Ordenar</option>
+        <option value="a-z">A-Z</option>
+        <option value="z-a">Z-A</option>
+	  </select>
+	  
+	</section>
+	
+    <section class="dataGeneral">
+      <section id="pokedex" class="data"></section>    
+    </section>
+
+    
+
+  </main>
+
+
+  <script src="main.js" type="module"></script>
+
+  
   </body>
 </html>
