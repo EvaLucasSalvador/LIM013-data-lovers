@@ -32,3 +32,7 @@ orderAlfabetic.addEventListener('change', () => {
   const orderSelect = orderAlfabetic.value;
   dataCards(orderData(data.pokemon, orderSelect));
 });
+
+
+
+let guardasCambio= "pokemones"
