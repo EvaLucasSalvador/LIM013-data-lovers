@@ -1,36 +1,25 @@
-
+*:focus {
+    outline: none;
+}
 * {
-    margin: 0;
-    padding: 0;
-
+    margin:0;
+    padding:0;
 }
 
-
-
-
-.contenedor{
-    
+.contenedor{    
 display: flex;
 flex-direction: row;
-margin:0 20px 0 20px;
 padding: 5px;
 background: linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;
-
 }
 
-
-
-
 .menu{
-
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0px 38px 0px 40px;;   
     padding: 5px;
    
-    
 }
 
 .options{
@@ -39,23 +28,18 @@ background: linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #1
 
 
 .icono{
-
-    display: flex;
-   
+    display: flex;   
 }
 
 
 .opcion{
-
     margin: 35px;
     text-align: center;
     display: inline-flex;
-
 }
 
 
 a{
-
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
@@ -71,20 +55,17 @@ a:hover{
 }
 
 
-h2{
-    
+h2{   
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-  
     color: #66EAA3;
 }
 
-p{
- 
+p{ 
   font-family: 'Segoe UI';
   font-style: normal;
   font-weight: 900;
@@ -93,52 +74,93 @@ p{
 
 
 #order{
-    width: 120%;
-    height: 50px;
+    width: 105%;
+    height: 55px;
     cursor: pointer;
     background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
-    border: #E3C734;
     border-radius: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 18px;
-    margin:25px;
-
+    margin: 25px 40px;
 }
 
 
-.button{
+#type{
+    width: 125%;
+    height: 55px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
+    border-radius: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+
+
+#generation{
+    width: 144%;
+    height: 55px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
+    border-radius: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 25px 40px;
+}
+
+
+
+
+
+
+.button{ 
     
+    width: 280px;   
     height: 40px;
     cursor: pointer;
-    background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
-    border: #E3C734;
+    background: linear-gradient(180deg, #ffff 15.1%, rgba(242, 212, 56, 0) 57.81%), #FF;
+    
     border-radius: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 18px;
     margin:25px;
-    padding: 5px;
-
+    padding:5px;
 }
 
 
-.button2 {
-    
+.button2 {    
     height: 50px;
     cursor: pointer;
     background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
-    border: #E3C734;
-   
+    border: #E3C734;   
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 18px;
-    margin: 22px;
-    
-
-   
+    margin: 22px;   
 }
 
+
+.button3 {
+        height: 48px;
+        cursor: pointer;
+        background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
+     
+        border-radius: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 31px;
+        margin: 25px 0px;
+        padding: 5px;
+ } 
+    
+    
+
+    
 
 .number{
     font-family: Montserrat;
@@ -164,24 +186,41 @@ opacity: 0.6;;
 background: linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #058264;*/
 
 }
+main{
+    background-image: url(imag/sifondo.svg);
+    min-height: 670px;
+    height: 600px;
+    overflow: auto;
 
+}
 
 #Layout{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 20px;
-    padding: 5px;
+    margin: 20px 0;
+    
    /* background: white;    aqui cambiar*/
-    background-image: url(imag/cambio.svg);
+    /* background-image: url(imag/cambio.svg); */
     /*background:  linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;;
     background: linear-gradient(180deg, #1EC0CA 4.69%, rgba(117, 220, 226, 0) 96.35%, rgba(255, 255, 255, 0) 100%), #0DA580;*/
 }
 
 .dataGeneral{
-    display: inline-flex;
-    margin-left: 55px;
+    display: flex;
+   
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 5px;
+   /* background: white;    aqui cambiar*/
+    /* background-image: url(imag/cambio.svg); */
+    /*background:  linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;;
+    background: linear-gradient(180deg, #1EC0CA 4.69%, rgba(117, 220, 226, 0) 96.35%, rgba(255, 255, 255, 0) 100%), #0DA580;*/
 }
+
+
+
 
 
 .data1{
@@ -198,7 +237,7 @@ background: linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #0
     font-weight: 900;
     padding: 10px; */
 
-    width: 155px;
+    /* width: 155px; */
     display: inline-flex;
     font-weight: 900;
     text-align: center;
@@ -206,7 +245,7 @@ background: linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #0
     color: #064C63;
     padding: 20px;
     margin: 20px;
-    background: rgba(200, 199, 199, 0.69);
+    background: rgba(200, 199, 199, 0.50);
     border-radius: 20px;
     font-weight: 900;
     padding: 25px;
@@ -215,23 +254,118 @@ background: linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #0
    
 
 
-.imgPkm { /*
-    margin: 25px;
-    width: 90px;
-    height: 90px;
-
-    border: 35px solid rgba(0, 0, 0, 0.1);*/
-    
+.imgPkm { 
+    /*border-radius: 50%;
+    background: white;
     margin: 2px;
     width: 135px;
     height: 130px;
-    border: 10px solid rgba(0, 0, 0, 0.1);
-
+    border: 10px solid rgba(0, 0, 0, 0.1);*/
+    border-radius: 50%;
+    background: repeating-linear-gradient(45deg, #0c06069e, white 100px);
+   /* background: repeating-linear-gradient(45deg, #000000b8, white 100px);
+    background: repeating-linear-gradient(45deg, #ff0000d9, white 100px);*/
+    margin: 2px;
+    width: 135px;
+    height: 130px;
+    border: 10px solid rgb(234 234 234 / 16%);
 }
 
 
+.acero{
+    background-color: darkgray;
+}
+
+.agua{
+    background-color: aqua;
+}
+
+.bicho{
+    background-color: rgb(235, 233, 158);
+}
+
+.dragon{
+    background-color: rgb(238, 137, 23);
+}
+
+.electrico{
+    background-color: rgb(219, 173, 19);
+}
+
+.fantasma{
+    background-color: bisque;
+}
+
+.fuego{
+    background-color: red;
+}
+
+.hada{
+    background-color: yellow;
+}
+
+.hielo{
+    background-color: cornflowerblue;
+}
+
+
+.lucha{
+    background-color: rgb(20, 101, 104);
+}
+
+.normal{
+    background-color: rgb(172, 91, 91);
+}
+
+.planta{
+    background-color: rgb(102, 173, 10);
+}
+
+.psiquico{
+    background-color: rgb(9, 77, 82);
+}
+
+.roca{
+    background-color: rgb(94, 94, 94);
+}
+
+.siniestro{
+    background-color: darkgray;
+}
+
+.tierra{
+    background-color: rgb(97, 44, 8);
+}
+
+.veneno{
+    background-color: rgb(185, 28, 185);
+}
+
+.volador{
+    background-color: rgb(133, 0, 160);
+}
+
+.johto{
+    background-color: rgb(45, 201, 240); 
+}
+
+.kanto{
+    background-color: rgb(108, 48, 248); 
+}
+
+
+.contenedorfooter{    
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background: linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;
+}
+
+    
 
 /*
 .namePoke{
     border: 5px solid rgba(0, 0, 0, 0.3);
 }*/
+
