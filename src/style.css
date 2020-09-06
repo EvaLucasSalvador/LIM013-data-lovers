@@ -133,6 +133,25 @@ p{
 }
 
 
+
+.button11 {
+    height: 48px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
+ 
+    border-radius: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 31px;
+    margin: 25px 20px;
+    padding: 5px;
+} 
+
+
+
+
+
+
 .button2 {    
     height: 50px;
     cursor: pointer;
@@ -172,7 +191,6 @@ p{
     background: linear-gradient(180deg, #1FC7D1 0%, rgba(255, 255, 255, 0) 100%), #2BC7A1;
     /*linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #058264;*/
     border-radius: 40px;
-
    /* font-family: Montserrat;
 font-style: normal;
 font-weight: 800;
@@ -187,7 +205,7 @@ background: linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #0
 
 }
 main{
-    background-image: url(imag/sifondo.svg);
+    background-image: url(imag/bonito.png);
     min-height: 670px;
     height: 600px;
     overflow: auto;
@@ -245,15 +263,22 @@ main{
     color: #064C63;
     padding: 20px;
     margin: 20px;
-    background: rgba(200, 199, 199, 0.50);
+    background: floralwhite;
+    /*background: rgba(200, 199, 199, 0.50);*/
     border-radius: 20px;
     font-weight: 900;
     padding: 25px;
+    -webkit-box-shadow: 1px 7px 13px 5px rgba(11,87,77,1); 
+    transition:2s; 
+    
+}
+
+.data1:hover{
+    transition:1s;
+    transform: scale(0.99);
 }
 
    
-
-
 .imgPkm { 
     /*border-radius: 50%;
     background: white;
@@ -268,9 +293,24 @@ main{
     margin: 2px;
     width: 135px;
     height: 130px;
-    border: 10px solid rgb(234 234 234 / 16%);
+    border: 3px solid rgb(234 234 234 / 16%);
+    -webkit-box-shadow: 3px 12px 19px -1px rgb(1 59 62 / 90%);
+    /*-webkit-box-shadow: 6px 10px 19px -1px rgba(0,0,0,0.75);*/
+    background-size: 400% 300%;
+    animation: BgGradient 7s ease;
 }
 
+@keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+ 
+
+/*
+.imgPkm:hover{
+    transform:rotate3D(10, 5, 2, 290deg);
+}*/
 
 .acero{
     background-color: darkgray;

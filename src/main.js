@@ -16,7 +16,7 @@ const dataCards = (dataPokemon) => {
     sectionElement.setAttribute('class', 'data1');
     sectionElement.innerHTML = `   
       <div id="card-${element.num}" class="card">
-      <p id="number-${element.num}">${element.num}</p>
+      <p id="number-${element.num}" class="number">${element.num}</p>
       <p id="imgPoke-${element.num}"><img src=${element.img} alt="" class="imgPkm"></p>
       <p id="namePoke-${element.num}">${element.name.toUpperCase()}</p>
     </div>
@@ -37,7 +37,6 @@ orderAlfabetic.addEventListener('change', () => {
 const type = document.querySelector('#type');
 type.addEventListener('change', () => {
   const orderSelect = type.value;
-
   dataCards(orderType(data.pokemon, orderSelect));
 });
 
@@ -66,7 +65,17 @@ buscar.addEventListener('click',()=>{
   }else{
     dataCards(data.pokemon)
   } 
-})
+});
+
+const resetear = document.querySelector('#resetear') // asignamos a la lupita
+resetear.addEventListener('click',()=>{
+  const orderSelect = 
+  type.options.selectedIndex =0
+  generation.options.selectedIndex =0
+  orderAlfabetic.options.selectedIndex =0
+  dataCards(data.pokemon);
+});
+
 
 
 
