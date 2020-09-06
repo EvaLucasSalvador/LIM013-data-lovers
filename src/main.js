@@ -14,6 +14,7 @@ const dataCards = (dataPokemon) => {
   dataPokemon.forEach((element) => {
     const sectionElement = document.createElement('section');
     sectionElement.setAttribute('class', 'data1');
+
     sectionElement.innerHTML = `   
       <div id="card-${element.num}" class="card">
       <p id="number-${element.num}" class="number">${element.num}</p>
@@ -21,7 +22,7 @@ const dataCards = (dataPokemon) => {
       <p id="namePoke-${element.num}">${element.name.toUpperCase()}</p>
     </div>
   `;
-
+     
     pokedex.appendChild(sectionElement);
   });
 };
