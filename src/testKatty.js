@@ -1,10 +1,5 @@
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-//console.log(example, data);
+import {orderData} from './data.js';
 
-import {orderData,orderType,orderGeneration,buscarPor} from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 const pokedex = document.getElementById('pokedex');
@@ -14,20 +9,19 @@ const dataCards = (dataPokemon) => {
   dataPokemon.forEach((element) => {
     const sectionElement = document.createElement('section');
     sectionElement.setAttribute('class', 'data1');
-
     sectionElement.innerHTML = `   
       <div id="card-${element.num}" class="card">
-      <p id="number-${element.num}" class="number">${element.num}</p>
+      <p id="number-${element.num}">${element.num}</p>
       <p id="imgPoke-${element.num}"><img src=${element.img} alt="" class="imgPkm"></p>
       <p id="namePoke-${element.num}">${element.name.toUpperCase()}</p>
     </div>
   `;
-     
+
     pokedex.appendChild(sectionElement);
   });
 };
 
-dataCards(data.pokemon);
+
 
 const orderAlfabetic = document.querySelector('#order');
 orderAlfabetic.addEventListener('change', () => {
@@ -35,27 +29,12 @@ orderAlfabetic.addEventListener('change', () => {
   dataCards(orderData(data.pokemon, orderSelect));
 });
 
-const type = document.querySelector('#type');
-type.addEventListener('change', () => {
-  const orderSelect = type.value;
-  dataCards(orderType(data.pokemon, orderSelect));
-});
 
-
-const generation = document.querySelector('#generation');
-generation.addEventListener('change', () => {
-  const orderSelect = generation.value;
-  let nuevaData = orderGeneration(data.pokemon, orderSelect)
-  if(type.value){
-    dataCards(orderType(nuevaData, type.value));
-  }else{
-    dataCards(nuevaData);
-  }
-  
-});
-
+// variable <= objecto HTML llamado busqueda 
 let busqueda = document.getElementById('busqueda') //document.querySelector('#busqueda')
+
 let buscar = document.querySelector('#buscar') // asignamos a la lupita
+
 buscar.addEventListener('click',()=>{
   let pokemon = busqueda.value // texto que has escrico en la caja de texto 
   if(pokemon){
@@ -65,30 +44,31 @@ buscar.addEventListener('click',()=>{
     dataCards([mibusqueda])
   }else{
     dataCards(data.pokemon)
-  } 
-});
-
-const resetear = document.querySelector('#resetear') // asignamos a la lupita
-resetear.addEventListener('click',()=>{
-  const orderSelect = 
-  type.options.selectedIndex =0
-  generation.options.selectedIndex =0
-  orderAlfabetic.options.selectedIndex =0
-  dataCards(data.pokemon);
-});
+  }
+  
+})
 
 
+//pasar a data 
+let  buscarPor = {
+  porNombre:function(nombre,data){
+      for (const item of data) {
+        if (item.name===nombre) {
+           return item
+        }
+      }
+      return []
+  }
 
-
-
-
-
-
+}
 
 
 
+console.log(data.pokemon)
 
-
-
-
+const todosTipos = ["grass", "poison", "fire",
+ "flying", "water", "bug", "normal",
+  "electric", "ground", "fighting", "psychic",
+   "rock", "ice", "ghost", "dragon", "fairy",
+    "dark", "steel"]
 
