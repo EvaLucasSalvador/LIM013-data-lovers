@@ -43,3 +43,9 @@ orderAlfabetic.addEventListener('change', () => {
 
 
 let guardasCambio= "pokemones"
+
+
+
+/*sectionElement.addEventListener('click',() => {
+ console.log
+}*/
