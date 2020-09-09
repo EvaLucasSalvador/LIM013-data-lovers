@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P.Oak</title>
+        <link rel="shortcut icon" href="imag/logo.svg" width=200px   type="image/x-icon">
+        <link rel="stylesheet" href="flexi.css" />
+        </head>
+    </head>
+    <body>
+
+        <div id="container">
+            <header id="header">
+                <div class=logo>
+                    <img src="imag/logo.svg" alt="" width="220px">                    
+                </div>
+
+                <nav id="menu">
+                    <ul class="row">
+                        <li>
+                            <a href="">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="">Actualizaciones</a>
+                        </li>
+                        <li>
+                            <a href="">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            
+            <section id="barraBuscador">
+                <div class="row barra">
+                    <div>
+                        <input data-type="name" type="text" id="busqueda" class="buscador buscador-texto"  placeholder="  Buscar">
+                    </div>
+                    <div class="row ">
+                        <button id="buscar" class="buscador buscador-boton" >
+                            <img src="imag/lupa.png" alt="" >     
+                         </button>                  
+                 
+                         <button id="resetear" class="buscador buscador-boton" >
+                             <img src="imag/d33eshacer.png" alt="" >
+                         </button>
+                    </div>
+                </div>
+                <div id="controles">
+                    <h2>Seleciona:</h2>
+                    <ul class="row">                       
+                        <li>
+                            <select id="order" class="selectStyle">
+                                <option value="" selected disabled>Ordenar</option>
+                                <option value="a-z">A-Z</option>
+                                <option value="z-a">Z-A</option>
+                             </select>
+                        </li>
+                        <li>                            
+                            <select id="type" class="selecTipos">
+                                <option value="" selected disabled>Tipo</option>
+                                <option class="acero" value="steel">Acero</option>
+                                <option class="agua" value="water">Agua</option>
+                                <option class="bicho" value="bug">Bicho</option>
+                                <option class="dragon" value="dragon">Dragón</option>
+                                <option class="electrico" value="electric">Eléctrico</option>
+                                <option class="fantasma" value="ghost">Fantasma</option>
+                                <option class="fuego" value="fire">Fuego</option>
+                                <option class="hada" value="fairy">Hada</option>
+                                <option class="hielo" value="ice">Hielo</option>
+                                <option class="lucha" value="fighting">Lucha</option>
+                                <option class="normal" value="normal">Normal</option>
+                                <option class="planta" value="grass">Planta</option>
+                                <option class="psiquico" value="psychic">Psiquico</option>
+                                <option class="roca" value="rock">Roca</option>
+                                <option class="siniestro" value="dark">Siniestro</option>
+                                <option class="tierra" value="ground">Tierra</option>
+                                <option class="veneno" value="poison">Veneno</option>
+                                <option class="volador" value="flying">Volador</option>
+                            </select>                                              
+                        </li>
+                        <li>
+                            <select id="generation" class="selecGeneracion">
+                                <option value="" selected disabled>Generación</option>
+                                <option class="johto" value="johto">Johto</option>
+                                <option class="kanto" value="kanto">Kanto</option>  
+                            </select>  
+                        </li>
+                    </ul>                                       
+                </div>
+            </section>
+
+
+            <section id="content">
+                
+
+                <div class="dataGeneral"></div>
+                    <section id="pokedex" class="data">
+                        
+                    </section>                  
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+
+        <script src="main.js" type="module"></script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

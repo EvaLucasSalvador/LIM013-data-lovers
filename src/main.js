@@ -16,18 +16,59 @@ const dataCards = (dataPokemon) => {
     sectionElement.setAttribute('class', 'data1');
 
     sectionElement.innerHTML = `   
-      <div id="card-${element.num}" class="card">
+    <div id="card-${element.num}" class="card">
       <p id="number-${element.num}" class="number">${element.num}</p>
       <p id="imgPoke-${element.num}"><img src=${element.img} alt="" class="imgPkm"></p>
       <p id="namePoke-${element.num}">${element.name.toUpperCase()}</p>
     </div>
-  `;
-     
+  `; 
+
+    sectionElement.addEventListener('click',()=>{
+      abrir(element)
+      });
+   
     pokedex.appendChild(sectionElement);
+   
   });
 };
 
+function abrir(element){
+  let dialogo = document.querySelector('#dialogo');
+  dialogo.style.display = 'block';
+  dialogo.innerHTML = '';
+  const divCreado = document.createElement('data1');
+  // divCreado.setAttribute('class', 'data1');
+  divCreado.classList.add('data1')
+  divCreado.innerHTML = `
+  <span class="close" style="">×</span>
+      <div id="card-${element.num}" class="card2">
+      <p id="number-${element.num}" class="number2">${element.num}</p>
+      <p id="imgPoke-${element.num}"><img src=${element.img} alt="" class="imgPkm2"></p>
+      <p id="namePoke-${element.num}" class="name2">${element.name.toUpperCase()}</p>
+      <div >
+        <p id="generation-${element.num}" class="generation">Generación: ${element.generation.name}</p>
+        <p id="size-${element.num}" class="size">Altura:${element.size.height}- Peso:${element.size.weight}</p>
+        <p id="type-${element.num}" class="type">Tipo:${element.type}</p>
+        <p id="resistant-${element.num}" class="resistant">Resistencia:${element.resistant}</p>
+        <p id="weaknesses-${element.num}" class="weaknesses">Debilidades:${element.weaknesses}</p>
+        <p id="egg-${element.num}" class="egg">Huevo:${element.egg}</p>
+      </div>
+    </div>
+  `;
+  dialogo.appendChild(divCreado);
+ /*  let nombre = dialogo.querySelector('#nombre')
+  nombre.innerText = pokemon.name
+  let img = dialogo.querySelector('#img')
+  img.src = pokemon.img
+  console.log(pokemon.name) */
+  let span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    dialogo.style.display = "none";
+  }
+}
 dataCards(data.pokemon);
+
+
 
 const orderAlfabetic = document.querySelector('#order');
 orderAlfabetic.addEventListener('change', () => {
@@ -71,24 +112,11 @@ buscar.addEventListener('click',()=>{
 const resetear = document.querySelector('#resetear') // asignamos a la lupita
 resetear.addEventListener('click',()=>{
   const orderSelect = 
+  orderAlfabetic.options.selectedIndex =0
   type.options.selectedIndex =0
   generation.options.selectedIndex =0
-  orderAlfabetic.options.selectedIndex =0
   dataCards(data.pokemon);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
