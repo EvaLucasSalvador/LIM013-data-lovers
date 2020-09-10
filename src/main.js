@@ -72,21 +72,24 @@ dataCards(data.pokemon);
 
 const orderAlfabetic = document.querySelector('#order');
 orderAlfabetic.addEventListener('change', () => {
-  const orderSelect = orderAlfabetic.value;
-  dataCards(orderData(data.pokemon, orderSelect));
+  //const orderSelect = orderAlfabetic.value;
+  //dataCards(orderData(data.pokemon, orderSelect));
+  dataCards(orderData(data.pokemon, orderAlfabetic.value));
 });
 
 const type = document.querySelector('#type');
 type.addEventListener('change', () => {
-  const orderSelect = type.value;
-  dataCards(orderType(data.pokemon, orderSelect));
+  //const orderSelect = type.value;
+  //dataCards(orderType(data.pokemon, orderSelect));
+  dataCards(orderType(data.pokemon, type.value));
 });
 
 
 const generation = document.querySelector('#generation');
 generation.addEventListener('change', () => {
-  const orderSelect = generation.value;
-  let nuevaData = orderGeneration(data.pokemon, orderSelect)
+  //const orderSelect = generation.value;
+  //let nuevaData = orderGeneration(data.pokemon, orderSelect)
+  let nuevaData = orderGeneration(data.pokemon, generation.value);
   if(type.value){
     dataCards(orderType(nuevaData, type.value));
   }else{
@@ -102,7 +105,7 @@ buscar.addEventListener('click',()=>{
   if(pokemon){
     let mibusqueda  = buscarPor.porNombre(pokemon,data.pokemon)
     //document.getElementById('mensaje-busqueda').innerText = mibusqueda
-    console.log(mibusqueda)
+    //console.log(mibusqueda)
     dataCards([mibusqueda])
   }else{
     dataCards(data.pokemon)
@@ -111,7 +114,7 @@ buscar.addEventListener('click',()=>{
 
 const resetear = document.querySelector('#resetear') // asignamos a la lupita
 resetear.addEventListener('click',()=>{
-  const orderSelect = 
+  //const orderSelect = 
   orderAlfabetic.options.selectedIndex =0
   type.options.selectedIndex =0
   generation.options.selectedIndex =0
