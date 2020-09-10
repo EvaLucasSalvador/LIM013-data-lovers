@@ -122,4 +122,28 @@ resetear.addEventListener('click',()=>{
 });
 
 
+/*
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawVisualization);
 
+function drawVisualization() {
+  // Some raw data (not necessarily accurate)
+  const nombrePokemones =  ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'];
+  const poderesPokemones =  ['2004/05',  165,      938,         522,             998,           450,      614.6];
+  var data = google.visualization.arrayToDataTable([
+   nombrePokemones,
+  poderesPokemones
+   
+  ]);
+
+  var options = {
+    title : 'Monthly Coffee Production by Country',
+    vAxis: {title: 'Cups'},
+    hAxis: {title: 'Month'},
+    seriesType: 'bars',
+    series: {5: {type: 'line'}}
+  };
+
+  var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+  chart.draw(data, options);
+}*/

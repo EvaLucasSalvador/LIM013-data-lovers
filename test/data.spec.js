@@ -1,5 +1,5 @@
-//import { orderData,orderType,orderGeneration  } from '../src/data.js';
-import { orderData } from '../src/data.js';
+import { orderData,orderType,orderGeneration  } from '../src/data.js';
+//import {orderGeneration} from '../src/data.js';
 
 const orderDataInput=[
   {"num":"001","name":"pikachu"},
@@ -17,29 +17,36 @@ const orderDataOutputZA=[
   {"num":"001","name": "bulbasaur"}
 ] 
 
-// const orderTypeInput=[
-//   { "name": "bulbasaur","type":["grass","poison"] },
-//   { "name": "ivysaur" , "type":["grass","poison"] },
-//   { "name": "charmeleon","type": ["fire"]}
-// ]
+const orderTypeInput=[
+  { "name": "bulbasaur","type":["grass","poison"] },
+  { "name": "ivysaur" , "type":["grass","poison"] },
+  { "name": "charmeleon","type": ["fire"]}
+]
 
-// const orderTypeGrass=[ 
-//   { "name": "bulbasaur","type":["grass","poison"] },
-//   { "name": "ivysaur" , "type":["grass","poison"] } 
-// ]
+const orderTypeGrass=[ 
+  { "name": "bulbasaur","type":["grass","poison"] },
+  { "name": "ivysaur" , "type":["grass","poison"] } 
+]
 
-// const orderTypeFire=[{ "name": "charmeleon","type": ["fire"]}]
-
-
-// const orderGenerationInput=[{"name": "charmeleon","generation": {"num": "generation i","name": "kanto"}},
-//                             {"name": "charizard","generation": {"num": "generation i","name": "kanto"}},
-//                             {"name": "misdreavus","generation": {"num": "generation ii","name": "johto"}}]
+const orderTypeFire=[
+  { "name": "charmeleon","type": ["fire"]}
+]
 
 
-// const orderGenerationOutput1=[{"name": "charmeleon","generation": {"num": "generation i","name": "kanto"}},
-//                               {"name": "charizard","generation": {"num": "generation i","name": "kanto"}}]
+const orderGenerationInput=[
+  {"name": "charmeleon","generation": {"num": "generation i","name": "kanto"}},
+  {"name": "charizard","generation": {"num": "generation i","name": "kanto"}},
+  {"name": "misdreavus","generation": {"num": "generation ii","name": "johto"}}
+]
 
-// const orderGenerationOutput2=[{"name": "misdreavus","generation": {"num": "generation ii","name": "johto"}}]
+const orderGenerationOutput1=[
+  {"name": "charmeleon","generation": {"num": "generation i","name": "kanto"}},
+  {"name": "charizard","generation": {"num": "generation i","name": "kanto"}}
+]
+
+const orderGenerationOutput2=[
+  {"name": "misdreavus","generation": {"num": "generation ii","name": "johto"}}
+]
 
 
 describe('orderData', () => {
@@ -58,33 +65,33 @@ describe('orderData', () => {
 });
 
 
-// describe('orderType', () => {
-//   it('is a function', () => {
-//     expect(typeof orderType).toBe('function');
-//   });
+describe('orderType', () => {
+  it('is a function', () => {
+    expect(typeof orderType).toBe('function');
+  });
 
-//   it('Debe retornar los pokemones del tipo grass', () => {
-//     expect(orderType(orderTypeInput,'grass')).toEqual(orderTypeGrass);
-//   });
+  it('Debe retornar los pokemones del tipo grass', () => {
+    expect(orderType(orderTypeInput,'grass')).toEqual(orderTypeGrass);
+  });
 
-//   it('Debe retornar los pokemones del tipo Fire', () => {
-//     expect(orderType(orderTypeInput,'fire')).toEqual(orderTypeFire);
-//   });
+  it('Debe retornar los pokemones del tipo Fire', () => {
+    expect(orderType(orderTypeInput,'fire')).toEqual(orderTypeFire);
+  });
 
-// });
+});
 
 
-// describe('orderGeneration', () => {
-//   it('is a function', () => {
-//     expect(typeof orderType).toBe('function');
-//   });
+describe('orderGeneration', () => {
+  it('is a function', () => {
+    expect(typeof orderGeneration).toBe('function');
+  });
 
-//   it('Debe retornar los pokemones del tipo grass', () => {
-//     expect(orderGeneration(orderGenerationInput,'grass')).toBe(orderGenerationOutput1);
-//   });
+  it('Debe retornar los pokemones del tipo grass', () => {
+    expect(orderGeneration(orderGenerationInput,'kanto')).toEqual(orderGenerationOutput1);
+  });
 
-//   it('Debe retornar los pokemones del tipo Fire', () => {
-//     expect(orderGeneration(orderGenerationInput,'fire')).toBe(orderGenerationOutput2);
-//   });
+  it('Debe retornar los pokemones del tipo Fire', () => {
+    expect(orderGeneration(orderGenerationInput,'johto')).toEqual(orderGenerationOutput2);
+  });
 
-// });
+});
