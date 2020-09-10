@@ -102,7 +102,7 @@ buscar.addEventListener('click',()=>{
   if(pokemon){
     let mibusqueda  = buscarPor.porNombre(pokemon,data.pokemon)
     //document.getElementById('mensaje-busqueda').innerText = mibusqueda
-    console.log(mibusqueda)
+    /*console.log(mibusqueda)*/
     dataCards([mibusqueda])
   }else{
     dataCards(data.pokemon)
@@ -110,13 +110,36 @@ buscar.addEventListener('click',()=>{
 });
 
 const resetear = document.querySelector('#resetear') // asignamos a la lupita
-resetear.addEventListener('click',()=>{
-  const orderSelect = 
-  orderAlfabetic.options.selectedIndex =0
-  type.options.selectedIndex =0
-  generation.options.selectedIndex =0
+resetear.addEventListener('click',()=>{ 
+  orderAlfabetic.options.selectedIndex =0;
+  type.options.selectedIndex =0;
+  generation.options.selectedIndex =0;
   dataCards(data.pokemon);
 });
 
 
+/*
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawVisualization);
 
+function drawVisualization() {
+  // Some raw data (not necessarily accurate)
+  const nombrePokemones =  ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'];
+  const poderesPokemones =  ['2004/05',  165,      938,         522,             998,           450,      614.6];
+  var data = google.visualization.arrayToDataTable([
+   nombrePokemones,
+  poderesPokemones
+   
+  ]);
+
+  var options = {
+    title : 'Monthly Coffee Production by Country',
+    vAxis: {title: 'Cups'},
+    hAxis: {title: 'Month'},
+    seriesType: 'bars',
+    series: {5: {type: 'line'}}
+  };
+
+  var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+  chart.draw(data, options);
+}*/
