@@ -1,13 +1,3 @@
-// estas funciones son de ejemplo
-
-//export const example = () => {
-//  return 'example';
-//};
-
-//export const anotherExample = () => {
-//  return 'OMG';
-//};
-
 export const orderData = (data, condition) => {
   let result;
   if (condition === 'a-z') {
@@ -51,5 +41,3 @@ export const buscarPor = {
       return []
   }
 };
-
-

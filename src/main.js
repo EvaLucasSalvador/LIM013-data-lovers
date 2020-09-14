@@ -1,9 +1,3 @@
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-//console.log(example, data);
-
 import {orderData,orderType,orderGeneration,buscarPor} from './data.js';
 import data from './data/pokemon/pokemon.js';
 
@@ -37,7 +31,6 @@ function abrir(element){
   dialogo.style.display = 'block';
   dialogo.innerHTML = '';
   const divCreado = document.createElement('data1');
-  // divCreado.setAttribute('class', 'data1');
   divCreado.classList.add('data1')
   divCreado.innerHTML = `
   <span class="close" style="">×</span>
@@ -56,11 +49,6 @@ function abrir(element){
     </div>
   `;
   dialogo.appendChild(divCreado);
- /*  let nombre = dialogo.querySelector('#nombre')
-  nombre.innerText = pokemon.name
-  let img = dialogo.querySelector('#img')
-  img.src = pokemon.img
-  console.log(pokemon.name) */
   let span = document.getElementsByClassName("close")[0];
   span.onclick = function() {
     dialogo.style.display = "none";
@@ -72,23 +60,17 @@ dataCards(data.pokemon);
 
 const orderAlfabetic = document.querySelector('#order');
 orderAlfabetic.addEventListener('change', () => {
-  //const orderSelect = orderAlfabetic.value;
-  //dataCards(orderData(data.pokemon, orderSelect));
   dataCards(orderData(data.pokemon, orderAlfabetic.value));
 });
 
 const type = document.querySelector('#type');
 type.addEventListener('change', () => {
-  //const orderSelect = type.value;
-  //dataCards(orderType(data.pokemon, orderSelect));
   dataCards(orderType(data.pokemon, type.value));
 });
 
 
 const generation = document.querySelector('#generation');
 generation.addEventListener('change', () => {
-  //const orderSelect = generation.value;
-  //let nuevaData = orderGeneration(data.pokemon, orderSelect)
   let nuevaData = orderGeneration(data.pokemon, generation.value);
   if(type.value){
     dataCards(orderType(nuevaData, type.value));
@@ -104,8 +86,6 @@ buscar.addEventListener('click',()=>{
   let pokemon = busqueda.value // texto que has escrico en la caja de texto 
   if(pokemon){
     let mibusqueda  = buscarPor.porNombre(pokemon,data.pokemon)
-    //document.getElementById('mensaje-busqueda').innerText = mibusqueda
-    //console.log(mibusqueda)
     dataCards([mibusqueda])
   }else{
     dataCards(data.pokemon)
@@ -120,30 +100,3 @@ resetear.addEventListener('click',()=>{
   generation.options.selectedIndex =0
   dataCards(data.pokemon);
 });
-
-
-/*
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawVisualization);
-
-function drawVisualization() {
-  // Some raw data (not necessarily accurate)
-  const nombrePokemones =  ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'];
-  const poderesPokemones =  ['2004/05',  165,      938,         522,             998,           450,      614.6];
-  var data = google.visualization.arrayToDataTable([
-   nombrePokemones,
-  poderesPokemones
-   
-  ]);
-
-  var options = {
-    title : 'Monthly Coffee Production by Country',
-    vAxis: {title: 'Cups'},
-    hAxis: {title: 'Month'},
-    seriesType: 'bars',
-    series: {5: {type: 'line'}}
-  };
-
-  var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
-  chart.draw(data, options);
-}*/

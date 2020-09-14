@@ -1,5 +1,4 @@
 import { orderData,orderType,orderGeneration  } from '../src/data.js';
-//import {orderGeneration} from '../src/data.js';
 
 const orderDataInput=[
   {"num":"001","name":"pikachu"},
