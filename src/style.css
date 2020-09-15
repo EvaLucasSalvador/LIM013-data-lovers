@@ -189,19 +189,10 @@ p{
     background: linear-gradient(180deg, #1FC7D1 0%, rgba(255, 255, 255, 0) 100%), #2BC7A1;
     /*linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #058264;*/
     border-radius: 40px;
-   /* font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 35px;
-line-height: 88px;
-text-align: center;
-color: rgba(16, 119, 125, 1);
-/*background:linear-gradient(180deg, rgba(19, 108, 103, 0) 46.88%, #10B1A8 85.42%, rgba(0, 123, 116, 0.890511) 99.48%), #058264;
-opacity: 0.6;;
-
-background: linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #058264;*/
-
 }
+
+
+
 main{
     background-image: url(imag/aqu12fondo.svg);
     min-height: 670px;
