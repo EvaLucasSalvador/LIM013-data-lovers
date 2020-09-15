@@ -431,9 +431,7 @@ main{
   }
  
 
-
-
-  /*para que vibre
+ /*para que vibre
   .imgPkm2:hover{
     -webkit-animation: tiembla 0.1s infinite;
   }
@@ -443,12 +441,6 @@ main{
     500%{ -webkit-transform:rotateZ( 1deg); }
   }*/
  
-
-
-
-
-    
-
 .close{
     color:#8c8c8c;
   float: right;
@@ -465,35 +457,34 @@ main{
 
 .generation{
    text-align: center;
-   background: linear-gradient(180deg, #dd7e12 0%, rgba(255, 255, 255, 0) 100%), #e4a214;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%), #e4a214;
  
 }
 
 .size{
     text-align: center;
-    background: linear-gradient(180deg, #2a9954 0%, rgba(255, 255, 255, 0) 100%), #7fd42e;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%), #7fd42e;
 }
-
 
 .type{
     text-align: center;
-    background: linear-gradient(180deg, #d562ec 0%, rgba(255, 255, 255, 0) 100%), #ee60f3;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%), #ee60f3;
 }
 
 
 
 .resistant{
     text-align: center;
-    background: linear-gradient(180deg, #2db6ec 0%, rgba(255, 255, 255, 0) 100%), #3d9ceb;
+    background: linear-gradient(180de, rgba(255, 255, 255, 0) 100%), #3d9ceb;
 }
 
 .weaknesses{
     text-align: center;
-    background: linear-gradient(180deg, #f7594e 0%, rgba(255, 255, 255, 0) 100%), #ec483c;
+    background: linear-gradient(180de, rgba(255, 255, 255, 0) 100%), #ec483c;
 
 }
 
 .egg{
 text-align: center;
-    background: linear-gradient(180deg, #fffb1d 0%, rgba(255, 255, 255, 0) 100%), #f5e44f;
+    background: linear-gradient(180de, rgba(255, 255, 255, 0) 100%), #f5e44f;
 }

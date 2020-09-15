@@ -26,7 +26,7 @@ export const orderType = (data,condition) => {
 
 
 export const orderGeneration = (pokemones,condition) => {
-  const pokeGeneration = pokemones.filter(pokemon => (pokemon.generation.name === condition ));
+  const pokeGeneration = pokemones.filter(pokemon => (pokemon.generation.name === condition));
   return pokeGeneration;
 };
 

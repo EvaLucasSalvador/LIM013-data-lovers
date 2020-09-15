@@ -6,7 +6,7 @@ const pokedex = document.getElementById('pokedex');
 const dataCards = (dataPokemon) => {
   pokedex.innerHTML = '';
   dataPokemon.forEach((element) => {
-    const sectionElement = document.createElement('section');
+    const sectionElement = document.createElement('div');
     sectionElement.setAttribute('class', 'data1');
 
     sectionElement.innerHTML = `   
@@ -74,7 +74,8 @@ generation.addEventListener('change', () => {
   let nuevaData = orderGeneration(data.pokemon, generation.value);
   if(type.value){
     dataCards(orderType(nuevaData, type.value));
-  }else{
+  }
+  else{
     dataCards(nuevaData);
   }
   
