@@ -100,3 +100,6 @@ resetear.addEventListener('click',()=>{
   generation.options.selectedIndex =0
   dataCards(data.pokemon);
 });
+
+
+
