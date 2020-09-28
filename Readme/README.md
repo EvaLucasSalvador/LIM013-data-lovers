@@ -82,40 +82,40 @@ Con dichas encuestas se pudo sacar las historias de usuarios que se trabajarían
 
 ### 3.2.1. Prototipo de baja fidelidad.
 #### Elaboración del LOGO
-![Desktop](3_LG.JPEG)
+![](3_LG.JPEG)
 #### Primera Historia
-![Desktop](3_0_1.JPEG)
+![](3_0_1.JPEG)
 #### Segunda Historia
-![Desktop](3_0_2.JPEG)
+![](3_0_2.JPEG)
 #### Segunda Historia
-![Desktop](3_0_3.JPEG)
+![](3_0_3.JPEG)
 
 
 ### 3.2.2. Prototipo de alta fidelidad.
 #### Primera Historia
-![Desktop](3_2_1.JPEG)
+![](3_2_1.JPEG)
 
-![Desktop](3_1_1.JPEG)
+![](3_1_1.JPEG)
 
 #### Segunda Historia
-![Desktop](3_2_2.JPEG)
+![](3_2_2.JPEG)
 
-![Desktop](3_1_2.JPEG)
+![](3_1_2.JPEG)
 
 #### Tercera Historia
-![Desktop](3_2_3.JPEG)
+![](3_2_3.JPEG)
 
-![Desktop](3_1_3.JPEG)
+![](3_1_3.JPEG)
 
 #### Cuarta Historia
-![Desktop](3_2_4.JPEG)
+![](3_2_4.JPEG)
 
-![Desktop](3_1_4.JPEG)
+![](3_1_4.JPEG)
 
 #### Quinta Historia
-![Desktop](3_2_0.JPEG)
+![](3_2_0.JPEG)
 
-![Desktop](3_1_5.JPEG)
+![](3_1_5.JPEG)
 
 ### 3.2.3. Proyecto Final.
 #### Primera Historia
