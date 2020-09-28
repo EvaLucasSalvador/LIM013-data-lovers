@@ -9,17 +9,15 @@
 .contenedor{    
 display: flex;
 flex-direction: row;
-padding: 5px;
 background: linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;
 }
 
 .menu{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    /* flex-direction: row;
     margin: 0px 38px 0px 40px;;   
-    padding: 5px;
-   
+    padding: 5px; */
 }
 
 .options{
@@ -29,13 +27,11 @@ background: linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #1
 
 .icono{
     display: flex;   
-}
+} 
 
 
 .opcion{
-    margin: 20px;
-    text-align: center;
-    display: inline-flex;
+    margin: 8px 0px;
 }
 
 
@@ -46,7 +42,7 @@ a{
     font-size: 18px;;
     line-height: 29px;
     text-align: center;
-    margin: 0px 0px 0px 100px;
+    margin-left: 32px;
     color: #66EAA3;
 }
 
@@ -72,7 +68,6 @@ p{
   padding: 3px;
 }
 
-
 #order{
     width: 105%;
     height: 55px;
@@ -84,7 +79,6 @@ p{
     font-size: 18px;
     margin: 25px 40px;
 }
-
 
 #type{
     width: 125%;
@@ -98,8 +92,6 @@ p{
     margin: 25px 0;
 }
 
-
-
 #generation{
     width: 144%;
     height: 55px;
@@ -111,11 +103,6 @@ p{
     font-size: 18px;
     margin: 25px 40px;
 }
-
-
-
-
-
 
 .button{    
     width: 280px;   
@@ -130,8 +117,6 @@ p{
     padding:5px;
 }
 
-
-
 .button11 {
     height: 48px;
     cursor: pointer;
@@ -145,11 +130,6 @@ p{
     padding: 5px;
 } 
 
-
-
-
-
-
 .button2 {    
     height: 50px;
     cursor: pointer;
@@ -161,23 +141,17 @@ p{
     margin: 22px;   
 }
 
-
 .button3 {
-        height: 48px;
-        cursor: pointer;
-        background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
-     
-        border-radius: 14px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        font-size: 31px;
-        margin: 25px 0px;
-        padding: 5px;
- } 
-    
-    
-
-    
+    height: 48px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #E3C734 15.1%, rgba(242, 212, 56, 0) 57.81%), #F7DA77;
+    border-radius: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 31px;
+    margin: 25px 0px;
+    padding: 5px;
+}    
 
 .number{
     font-family: Montserrat;
@@ -187,11 +161,8 @@ p{
     line-height: 25px;
     text-align: center;
     background: linear-gradient(180deg, #1FC7D1 0%, rgba(255, 255, 255, 0) 100%), #2BC7A1;
-    /*linear-gradient(180deg, #09747B 0%, rgba(255, 255, 255, 0) 100%), #058264;*/
     border-radius: 40px;
 }
-
-
 
 main{
     background-image: url(imag/aqu12fondo.svg);
@@ -206,12 +177,7 @@ main{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 20px 0;
-    
-   /* background: white;    aqui cambiar*/
-    /* background-image: url(imag/cambio.svg); */
-    /*background:  linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;;
-    background: linear-gradient(180deg, #1EC0CA 4.69%, rgba(117, 220, 226, 0) 96.35%, rgba(255, 255, 255, 0) 100%), #0DA580;*/
+    margin: 20px 0;  
 }
 
 .dataGeneral{
@@ -221,29 +187,12 @@ main{
     flex-wrap: wrap;
     margin: auto;
     padding: 5px;
-   /* background: white;    aqui cambiar*/
-    /* background-image: url(imag/cambio.svg); */
-    /*background:  linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;;
-    background: linear-gradient(180deg, #1EC0CA 4.69%, rgba(117, 220, 226, 0) 96.35%, rgba(255, 255, 255, 0) 100%), #0DA580;*/
 }
 
 
 
 .data1{
-    /*width: 217px;
-    display: inline-flex;
-    font-weight: 900;
-    text-align: center;
-    /*color: cadetblue;
-    color:  #064C63; 
-     padding: 20px; 
-    margin: 5px;
-    background: rgba(200, 199, 199, 0.69); 
-    border-radius: 20px;
-    font-weight: 900;
-    padding: 10px; */
 
-    /* width: 155px; */
     display: inline-flex;
     font-weight: 900;
     text-align: center;
@@ -252,12 +201,9 @@ main{
     padding: 20px;
     margin: 20px;
     background: white;
-    /*background-image: url(imag/1221bonito.png);*/
-    /*background: rgba(200, 199, 199, 0.50);*/
     border-radius: 20px;
     font-weight: 900;
     padding: 25px;
-    -webkit-box-shadow: 1px 7px 13px 5px rgba(11,87,77,1); 
     transition:2s; 
     
 }
@@ -275,7 +221,6 @@ main{
     width: 135px;
     height: 130px;
     border: 3px solid rgb(234 234 234 / 16%);
-    -webkit-box-shadow: 3px 12px 19px -1px rgb(1 59 62 / 90%);
     background-size: 400% 300%;
     animation: BgGradient 7s ease;
 }
@@ -286,114 +231,11 @@ main{
     100% {background-position: 0% 50%;}
 }
 
-/*
-.imgPkm:hover{
-    transform:rotate3D(10, 5, 2, 290deg);
-}*/
-
-.acero{
-    background-color: darkgray;
-}
-
-.agua{
-    background-color: aqua;
-}
-
-.bicho{
-    background-color: rgb(235, 233, 158);
-}
-
-.dragon{
-    background-color: rgb(238, 137, 23);
-}
-
-.electrico{
-    background-color: rgb(219, 173, 19);
-}
-
-.fantasma{
-    background-color: bisque;
-}
-
-.fuego{
-    background-color: red;
-}
-
-.hada{
-    background-color: yellow;
-}
-
-.hielo{
-    background-color: cornflowerblue;
-}
-
-
-.lucha{
-    background-color: rgb(20, 101, 104);
-}
-
-.normal{
-    background-color: rgb(172, 91, 91);
-}
-
-.planta{
-    background-color: rgb(102, 173, 10);
-}
-
-.psiquico{
-    background-color: rgb(9, 77, 82);
-}
-
-.roca{
-    background-color: rgb(94, 94, 94);
-}
-
-.siniestro{
-    background-color: darkgray;
-}
-
-.tierra{
-    background-color: rgb(97, 44, 8);
-}
-
-.veneno{
-    background-color: rgb(185, 28, 185);
-}
-
-.volador{
-    background-color: rgb(133, 0, 160);
-}
-
-.johto{
-    background-color: rgb(245, 80, 14); 
-}
-
-.kanto{
-    background-color: rgb(47, 10, 133); 
-}
-
-
-.contenedorfooter{  
-    width: 100%; 
-    margin: 0px; 
-    height: 65px;
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    background: linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;
-}
-
-    
-
-
-/*Esta es la ventana de infomacion de cada pokemon/
-*/
+/*Esta es la ventana de infomacion de cada pokemon/*/
 
 .name2 { 
     font-size: 24px;;
 }
-
-
 
 #dialogo{
     z-index: 12;
@@ -406,33 +248,19 @@ main{
     top: 0;
 }
 
-
-
-
-
 .card2{
     background-image: url(imag/fondo-colorido_18866-29.jpg);
     margin: 35px;
-    padding: 103px;
+    padding: 50px;
     display: inline-flex;
+    flex-direction: column;
 
 }
 
 .imgPkm2{
     width:200px;
     height:210px;
-  }
- 
-
- /*para que vibre
-  .imgPkm2:hover{
-    -webkit-animation: tiembla 0.1s infinite;
-  }
-  @-webkit-keyframes tiembla{
-    0%  { -webkit-transform:rotateZ(-1deg); }
-    50% { -webkit-transform:rotateZ( 0deg) scale(.4); }
-    500%{ -webkit-transform:rotateZ( 1deg); }
-  }*/
+}
  
 .close{
     color:#8c8c8c;
@@ -449,35 +277,69 @@ main{
 }
 
 .generation{
-   text-align: center;
+   text-align: start;
    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%), #e4a214;
  
 }
 
 .size{
-    text-align: center;
+    text-align: start;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%), #7fd42e;
 }
 
 .type{
-    text-align: center;
+    text-align: start;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 100%), #ee60f3;
 }
 
-
-
 .resistant{
-    text-align: center;
+    text-align: start;
     background: linear-gradient(180de, rgba(255, 255, 255, 0) 100%), #3d9ceb;
 }
 
 .weaknesses{
-    text-align: center;
+    text-align: start;
     background: linear-gradient(180de, rgba(255, 255, 255, 0) 100%), #ec483c;
 
 }
 
 .egg{
-text-align: center;
+text-align: start;
     background: linear-gradient(180de, rgba(255, 255, 255, 0) 100%), #f5e44f;
+}
+
+/*------------footer------------------------*/
+
+footer{
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+	background: linear-gradient(180deg, #0E7D84 0%, rgba(255, 255, 255, 0) 100%), #15A481;
+    color: white;    
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row{
+     display: flex;
+}
+
+.row img{
+    width: 40px;
+    height: 40px;
+}
+
+.row label{
+    color: #ffffff;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }

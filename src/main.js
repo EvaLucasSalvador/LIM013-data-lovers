@@ -37,8 +37,9 @@ function abrir(element){
       <div id="card-${element.num}" class="card2">
       <p id="number-${element.num}" class="number2">${element.num}</p>
       <p id="imgPoke-${element.num}"><img src=${element.img} alt="" class="imgPkm2"></p>
-      <p id="namePoke-${element.num}" class="name2">${element.name.toUpperCase()}</p>
+  
       <div >
+        <p id="namePoke-${element.num}" class="name2">${element.name.toUpperCase()}</p>
         <p id="generation-${element.num}" class="generation">Generación: ${element.generation.name}</p>
         <p id="size-${element.num}" class="size">Altura:${element.size.height}- Peso:${element.size.weight}</p>
         <p id="type-${element.num}" class="type">Tipo:${element.type}</p>
