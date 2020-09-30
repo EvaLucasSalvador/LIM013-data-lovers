@@ -11,7 +11,7 @@ export const orderData = (data, condition) => {
     else {
     result = data.sort((a, b) => {
       if (a.name < b.name) {
-      return 1;
+      return 1; 
       }
       return -1;
     });
